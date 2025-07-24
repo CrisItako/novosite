@@ -3,15 +3,15 @@ body{
     margin:0;
     background: #f9f9f9;
     color: #333;
-}
+
 header{
     background: #000;
     color: #fff;
-    padding: 20px;
+    padding: 30px;
     text-align: center;
 }
 nav{
-    margin: 0 15px;
+    margin: 0 35px;
     color: #ffa500;
     text-decoration: none;
     font-weight: bold;
@@ -39,7 +39,7 @@ nav{
     border-radius: 5px;
 }
 .produtos-card img{
-    width: 100%;
+    width: 15%;
     height: auto;
 }
 .contato{
@@ -47,20 +47,37 @@ nav{
     background: #eee;
 
 }
-form{
+.watsapp-float{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 9px rgb(0,0,0,0.3);
+    z-index: 1000;
     display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin: auto;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+
 }
-form imput, form textarea{
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #CCC;
+.watsapp-float:hover {
+    background-color: #128c7e;
+    transform: scale(1.1);
+
+}
+.watsapp-float img {
+    width: 30px;
+    height: 30px;
 }
 footer{
     background:#000;
     color: #fff;
     text-align: center;
     padding: 10px;
+}
 }
